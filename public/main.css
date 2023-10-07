@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+@media screen and (min-width: 960px) {
+    .hero_title{
+        font-size: 2rem;
+    font-weight: 900;
+    }
+
+}
+
+.hero_bg_img_container {
+    width: 100%;
+    height: 100%;
+}
+
+.hero_bg_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero_bg_overlay {
+    position: absolute;
+    inset: 0;
+    /*shorthand for margin attribute*/
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero_card {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    right: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.hero_title {
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.hero_subtitle,
+.hero_description {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.email {
+    width: 450px;
+    height: 60px;
+    color: black;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    border-color: white;
+
+}
+
+.get_started {
+    font-size: large;
+    width: 170px;
+    height: 60px;
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+    border-top: 8px solid rgb(69, 69, 69);
+    padding: 50px;
+}
+
+.card-1 {
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.desc-1 {
+    padding-left: 80px;
+}
+
+.card-1 video {
+    position: relative;
+    width: 600px;
+    height: 90%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+}
+
+.card-1 img {
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+
+.style-cards h1 {
+    font-size: 3rem;
+    padding: 1rem;
+    padding-left: 0;
+
+}
+
+.style-cards h3 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+/* fine */
+.card-2 {
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 40% 60%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.desc-2 {
+    padding-left: 100px;
+}
+
+.card-3 {
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.desc-3 {
+    padding-left: 80px;
+    padding-right: 20px;
+
+}
+
+.card-3 img {
+    width: 110%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+
+}
+
+.card-3 video {
+    position: relative;
+    width: 500px;
+    height: 90%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+}
+
+@media screen and (min-width:320px) {
+    .faq {
+        min-height: auto;
+        padding: 4.5rem 0;
+    }
+
+    .faq h1{
+        font-size: 3rem;
+    font-weight: 900;
+    }
+    .faq h2{
+        padding: 1.5rem;
+    }
+
+}
+
+/* FAQ section container */
+.faq {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-top: 8px solid rgb(69, 69, 69);
+    color: #fff;
+    text-align: center;
+    min-height: auto;
+    padding: 4rem;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+/* the FAQ section header */
+.faq h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/*  each FAQ item */
+.faq-item {
+    background-color: #333;
+    margin-bottom: 20px;
+}
+
+/* FAQ item question (h2) */
+.faq-item h2 {
+    background-color: #333;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*  FAQ item answer (p) */
+.faq-item p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.9rem;
+    background-color: rgb(45, 45, 45);
+    color: white;
+    max-height: 75rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: left;
+    overflow: hidden;
+    margin: 1rem;
+}
+
