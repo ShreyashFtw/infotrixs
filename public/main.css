@@ -10,14 +10,6 @@ body {
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
 }
 
-@media screen and (min-width: 960px) {
-    .hero_title{
-        font-size: 2rem;
-    font-weight: 900;
-    }
-
-}
-
 .hero_bg_img_container {
     width: 100%;
     height: 100%;
@@ -78,6 +70,166 @@ body {
     background-color: #dc030f;
     border: 1px solid #dc030f;
     color: white;
+}
+
+/* heromobilecss */
+
+@media screen and (max-width: 959px) {
+    body {
+        margin-right: 0; /* Remove the page margin on the right side */
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    .hero_card {
+        top: 25%;
+        left: 10%;
+        right: 20%;
+    }
+
+    .hero_bg_img_container {
+        width: 150%;
+        height: 100%;
+    }
+
+    .hero_bg_image {
+        width: 150%;
+        height: 600px;
+        object-fit: cover;
+    }
+
+    .hero_title {
+        font-size: 1.2rem;
+    }
+
+    .hero_bg_overlay {
+        position: absolute;
+        inset: 0;
+        width: 150%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .hero_subtitle {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .hero_description {
+        font-size: 1rem;
+        text-align: left;
+        margin-left: 0%;
+    }
+
+    .email {
+        width: 180px;
+        height: 40px;
+        padding: 0.25rem 0.5rem;
+        border-radius: 3px;
+    }
+
+    .get_started {
+        font-size: large;
+        width: 140px;
+        height: 40px;
+    }
+}
+
+/* hero ENDDS */
+/* Mobile styles */
+
+@media screen and (max-width: 959px) {
+
+    .card-1,
+    .card-2,
+    .card-3 {
+        border-top: 8px solid rgb(69, 69, 69);
+    }
+
+    .card-1 {
+        position: relative;
+        display: inline-grid;
+        grid-template-columns: 32% 30%;
+        text-align: left;
+        align-items: center;
+        padding: 25px 45px 50px;
+    }
+
+    .desc-1 {
+        padding-left: 1px;
+        font-size: 10rem;
+    }
+
+    .card-1 video {
+        position: relative;
+        width: 300px;
+        height: 90%;
+        grid-column: 2/2;
+        grid-row: 1/2;
+        z-index: -1;
+    }
+
+    .card-1 img {
+        grid-column: 2/2;
+        grid-row: 1/2;
+    }
+
+    .style-cards h1 {
+        font-size: 3rem;
+        padding: 1rem;
+        padding-left: 0;
+
+    }
+
+    .style-cards h3 {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    /* fine */
+    .card-2 {
+        position: relative;
+        display: inline-grid;
+        grid-template-columns: 40% 60%;
+        text-align: left;
+        align-items: center;
+        padding: 25px 45px 50px;
+    }
+
+    .desc-2 {
+        padding-left: 100px;
+        font-size: 2rem;
+    }
+
+    .card-3 {
+        position: relative;
+        display: inline-grid;
+        grid-template-columns: 50% 40%;
+        text-align: left;
+        align-items: center;
+        padding: 25px 45px 50px;
+    }
+
+    .desc-3 {
+        padding-left: 80px;
+        padding-right: 20px;
+
+    }
+
+    .card-3 img {
+        width: 110%;
+        grid-column: 2/2;
+        grid-row: 1/2;
+
+    }
+
+    .card-3 video {
+        position: relative;
+        width: 500px;
+        height: 90%;
+        grid-column: 2/2;
+        grid-row: 1/2;
+        z-index: -1;
+    }
 }
 
 .card-1,
@@ -171,17 +323,19 @@ body {
     z-index: -1;
 }
 
+/* ######################### */
 @media screen and (min-width:320px) {
     .faq {
         min-height: auto;
         padding: 4.5rem 0;
     }
 
-    .faq h1{
+    .faq h1 {
         font-size: 3rem;
-    font-weight: 900;
+        font-weight: 900;
     }
-    .faq h2{
+
+    .faq h2 {
         padding: 1.5rem;
     }
 
@@ -240,5 +394,3 @@ body {
     text-align: left;
     overflow: hidden;
     margin: 1rem;
-}
-
