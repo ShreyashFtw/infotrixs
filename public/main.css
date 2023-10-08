@@ -23,8 +23,7 @@ body {
 
 .hero_bg_overlay {
     position: absolute;
-    inset: 0;
-    /*shorthand for margin attribute*/
+    inset: 0;/*shorthand for margin attribute*/
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
@@ -72,13 +71,12 @@ body {
     color: white;
 }
 
-/* heromobilecss */
+/*HEROMOBILE CSS */
 
 @media screen and (min-width: 320px) and (max-width: 959px) {
     body {
         margin-right: 0;
-        overflow-x: hidden;
-        /* Prevent horizontal scrolling */
+        overflow-x: hidden;/* Prevent horizontal scrolling */
     }
 
     .hero_card {
@@ -135,7 +133,9 @@ body {
     }
 }
 
-/* hero ENDDS */
+/* HERO ENDS */
+
+/* CARD STARTS */
 @media screen and (max-width: 959px) {
 
     .card-1,
@@ -199,8 +199,8 @@ body {
     }
 
     .desc-2 {
-        padding: 5px; /* Add some padding for spacing */
-        font-size: 1.3rem; /* Adjust font size for desc-2 */
+        padding: 5px; 
+        font-size: 1.3rem; 
         text-align: center; 
     }
     .desc-2 h1{
@@ -208,23 +208,23 @@ body {
     }
 
     .card-2 img {
-        max-width: 150%; /* Ensure image doesn't overflow */
+        max-width: 150%; 
         height: 60%;
     }
 
     }
 
 
-/* Fix the right blank space on 420x959px */
 @media screen and (min-width: 420px) {
 
     .card-1,
     .card-3,
     .card-2 {
-        padding: 25px 5px;
-        /* Reduce horizontal padding for smaller screens */
+        padding: 25px 5px;/* Reduce horizontal padding for smaller screens */
     }
 }
+
+/*********************/
 
 .card-1,
 .card-2,
@@ -340,7 +340,6 @@ body {
 
 }
 
-/* FAQ section container */
 .faq {
     position: relative;
     display: flex;
@@ -354,7 +353,7 @@ body {
     height: 100%;
 }
 
-/* the FAQ section header */
+/* the FAQ header */
 .faq h1 {
     font-size: 3rem;
     font-weight: 900;
@@ -362,13 +361,13 @@ body {
     cursor: pointer;
 }
 
-/*  each FAQ item */
+/*   FAQ item */
 .faq-item {
     background-color: #333;
     margin-bottom: 20px;
 }
 
-/* FAQ item question (h2) */
+/* FAQ item (h2) */
 .faq-item h2 {
     background-color: #333;
     font-size: 1.5rem;
@@ -380,7 +379,7 @@ body {
     justify-content: space-between;
 }
 
-/*  FAQ item answer (p) */
+/*  FAQ  answer (p) */
 .faq-item p {
     font-size: 1.5rem;
     font-weight: 400;
