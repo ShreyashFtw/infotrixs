@@ -53,19 +53,18 @@ body {
 .footer a:hover {
     color: #ca1515;
 }
-
-/* Media Query for Mobile Devices */
-@media (max-width: 768px) {
+/* MOBILE CSS FOR FOOTER */
+@media (max-width: 968px) {
     .footer-cols {
         justify-content: center;
     }
 
     .footer-cols li {
         font-size: 16px;
-        text-align: center; /* Center align for mobile devices */
+        text-align: center; 
     }
 
     .footer {
-        padding: 100px; /* Adjust padding for mobile devices */
-    }
+        padding: 100px; 
+}
 }

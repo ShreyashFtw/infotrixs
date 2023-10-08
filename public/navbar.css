@@ -9,7 +9,7 @@ body {
     color: white;
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
 }
-
+/* NAVBAR STARTS */
 
 .navbar {
     position: absolute;
@@ -59,4 +59,4 @@ body {
     width: 100px;
 }
 
-/* navbar ends */
+/* NAVBAR ENDS */
