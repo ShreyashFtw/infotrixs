@@ -54,7 +54,7 @@ body {
     color: #ca1515;
 }
 /* MOBILE CSS FOR FOOTER */
-@media (max-width: 968px) {
+@media screen and (min-width: 320px) and (max-width: 1024px) {
     .footer-cols {
         justify-content: center;
     }

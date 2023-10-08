@@ -73,7 +73,7 @@ body {
 
 /*HEROMOBILE CSS */
 
-@media screen and (min-width: 320px) and (max-width: 959px) {
+@media screen and (min-width: 320px) and (max-width: 1024px) {
     body {
         margin-right: 0;
         overflow-x: hidden;/* Prevent horizontal scrolling */
@@ -136,7 +136,7 @@ body {
 /* HERO ENDS */
 
 /* CARD STARTS */
-@media screen and (min-width: 320px) and (max-width: 959px) {
+@media screen and (min-width: 320px) and (max-width: 1024px) {
 
     .card-1,
     .card-3 {
@@ -217,10 +217,8 @@ body {
 
     }
 
-
-@media screen and (min-width: 320px) {
-
-    .card-1,
+    @media screen and (min-width: 320px) and (max-width: 1024px) {
+        .card-1,
     .card-3,
     .card-2 {
         padding: 25px 5px;/* Reduce horizontal padding for smaller screens */
@@ -320,7 +318,7 @@ body {
 }
 
 /* ######################### */
-@media screen and (min-width:320px) {
+@media screen and (min-width: 320px) and (max-width: 1024px) {
     body {
         margin-right: 0;
         overflow-x: hidden;
