@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+/* FOOTER STARTS */
+.footer {
+    font-family: Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    border-top: 8px solid rgb(69, 69, 69);
+    background-color: #111;
+    padding: 70px 0;
+    text-align: center;
+    font-size: 18px;
+    padding: 130px;
+    /* Default padding for desktop */
+}
+
+.footer-cols {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+    /* Default gap for desktop */
+    text-align: left;
+}
+
+.footer-cols ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-cols li {
+    margin: 20px 0;
+    color: #999;
+    font-size: 17px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #999;
+    transition: color 0.2s;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    color: #ca1515;
+}
+/* MOBILE CSS FOR FOOTER */
+@media (max-width: 968px) {
+    .footer-cols {
+        justify-content: center;
+    }
+
+    .footer-cols li {
+        font-size: 16px;
+        text-align: center; 
+    }
+
+    .footer {
+        padding: 100px; 
+}
+}
